@@ -60,7 +60,12 @@ header p {
 
     
 }
-
+i{
+    display: relative;
+    color: #5c5858;
+    padding: 10px;
+    font-size: 40px;   
+}
 /* Secciones del currículum */
 form {
     background-color: #090909;
