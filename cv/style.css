@@ -31,16 +31,24 @@ html{
 }
 
 
-header {
+header   {
+    color: #fff;
+    text-align: center;
+    padding: 40px 0;
+    
+}
+header a  {
     color: #fff;
     text-align: center;
     padding: 40px 0;
     
 }
 
+
 header h1 {
     font-size: 36px;
     margin-bottom: 10px;
+    display: center;
 }
 
 header p {
@@ -53,12 +61,13 @@ header p {
     border: #5c5858;
     border-radius: 100%;
     width: 300px;
-    height: 300px;
+    height: 300px;    
+}
+.logo1 img{
+    background-color: #090909;
     
-    
-    
-
-    
+    width: 150px;
+    height: 150px;
 }
 i{
     display: relative;
