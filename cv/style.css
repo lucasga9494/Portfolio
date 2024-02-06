@@ -95,6 +95,54 @@ label {
     border-radius: 8px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
 }
+.habilidades{
+   /* background: linear-gradient(to right, #245a2c, #3c5733 50%, #5d805d 50%, #699e69);*/
+    text-align: center;
+    padding: 300px;
+    background-image: url(/cursos/AdmDatosDiplo/habilidadesimg.jpg) ;
+    background-size: cover;
+    margin: auto; /* Centra el contenido horizontalmente */
+    width: auto;
+    height: auto;
+    margin: 10px auto;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    
+    
+   
+}
+.habilidades li{
+    list-style-type: none; /* Quita los puntos de la lista */
+    padding: 0;
+    display: inline; /* Muestra los elementos de la lista en línea */
+    margin-right: 10px; /* Espaciado entre los elementos de la lista */
+}
+
+.idiomas {
+    /* background: linear-gradient(to right, #245a2c, #3c5733 50%, #5d805d 50%, #699e69);*/
+     
+     padding: 300px;
+     text-align: center;
+     background-position: center;
+     background-image: url(/cursos/AdmDatosDiplo/imgidio.jpg) ;
+     background-size: cover;
+     margin: auto; /* Centra el contenido horizontalmente */
+     width: auto;
+     height: auto;
+     margin: 10px auto;
+     padding: 10px;
+     border-radius: 8px;
+     box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+
+    }
+
+.idiomas li{
+        list-style-type: none; /* Quita los puntos de la lista */
+        padding: 0;
+        display: inline; /* Muestra los elementos de la lista en línea */
+        margin-right: 10px; /* Espaciado entre los elementos de la lista */
+    }
 .my-button {
     color: #FFF;
     border: 2px solid #6602d8;
