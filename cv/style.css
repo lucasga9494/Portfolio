@@ -1,47 +1,82 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
 
-*{
-    animation:  mover-izquierda-derecha 1s 1;
+* {
+    animation: mover-izquierda-derecha 1s 1;
 }
-@keyframes mover-izquierda-derecha{
-    from{
-        transform:translateX(-100px);
+
+@keyframes mover-izquierda-derecha {
+    from {
+        transform: translateX(-100px);
 
     }
-    to{
-        transform:translateX(0px) ;
+
+    to {
+        transform: translateX(0px);
     }
 }
-html{
+
+html {
     scroll-behavior: smooth;
 }
-.navbar a{
+
+.navbar a {
     font-size: 18px;
-    color:#fff;
+    color: #fff;
     font-weight: 500;
     margin-left: 40px;
 }
 
- body, .script {
+body,
+.script {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #080808;
     color: #fdfdfd;
     margin: 0;
     padding: 0;
 }
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 300px;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    color: white;
+  }
+  
+  .popup-content {
+    position: relative;
+  }
+  
+  .close-btn {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  
+  .close-btn:hover {
+    color: #ccc;
+  }
+  
 
-
-header   {
+header {
     color: #fff;
     text-align: center;
     padding: 40px 0;
-    
+
 }
-header a  {
+
+header a {
     color: #fff;
     text-align: center;
     padding: 40px 0;
-    
+
 }
 
 
@@ -53,34 +88,84 @@ header h1 {
 
 header p {
     font-size: 30px;
-    
+
 }
-.logo img{
+
+.logo img {
     background-color: #090909;
     box-shadow: 0px 0px 30px rgba(249, 252, 250, 0.363);
     border: #5c5858;
     border-radius: 100%;
     width: 300px;
-    height: 300px;    
+    height: 300px;
 }
-.logo1 img{
+
+.logo1 img {
     background-color: #090909;
-    
+
     width: 150px;
     height: 150px;
 }
-i{
+
+i {
     display: relative;
     color: #5c5858;
     padding: 10px;
-    font-size: 40px;   
+    font-size: 40px;
 }
-/* Secciones del currículum */
-form {
-    background-color: #090909;
+.sobreMi{
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(235, 232, 232, 0.363);
+    width: 300px;
+}
+
+.educacion{
+  
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(235, 232, 232, 0.363);
+    width: 300px;
+}
+
+.cursos{
+    
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(235, 232, 232, 0.363);
+        width: 300px;
+
+
+}
+.video-conteiner {
+    position: fixed; /* Para que el video se mantenga detrás de los demás elementos */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden; /* Para ocultar cualquier parte del video que no quepa en el contenedor */
+    z-index: -1; /* Para colocar el video detrás de los demás elementos */
+}
+
+.video-conteiner video {
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Para centrar el video */
+}
+
+/* Secciones del currículum */
+form {
+    background-color: #030202;
+    padding: 20px;
+    border-width: 5px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(235, 232, 232, 0.363);
+   
     width: 300px;
 }
 
@@ -88,61 +173,91 @@ label {
     display: block;
     margin-bottom: 8px;
 }
+
+.contenedor {
+    display: flex;
+}
+
+
+
 .section {
+    flex: 3;
+    /* Esto hace que ambas secciones ocupen el mismo ancho */
+    border: 1px solid black;
+    /* Añade bordes para visualizar las secciones */
+    padding: 10px;
+    /* Añade espacio alrededor del contenido */
     background-color: #0a0a0a;
     margin: 20px auto;
     padding: 20px;
     border-radius: 8px;
+   
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
 }
-.habilidades{
-   /* background: linear-gradient(to right, #245a2c, #3c5733 50%, #5d805d 50%, #699e69);*/
+
+.habilidades {
+    /* background: linear-gradient(to right, #245a2c, #3c5733 50%, #5d805d 50%, #699e69);*/
     text-align: center;
     padding: 300px;
-    background-image: url(/cursos/AdmDatosDiplo/habilidadesimg.jpg) ;
+    background-image: url(/cursos/AdmDatosDiplo/habilidadesimg.jpg);
     background-size: cover;
-    margin: auto; /* Centra el contenido horizontalmente */
+    margin: auto;
+    /* Centra el contenido horizontalmente */
+    width: auto;
+    height: auto;
+    margin: 10px auto;
+    padding: 10px;
+    
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(249, 245, 245, 0.1);
+
+
+
+}
+
+.cursos {
+    display: block;
+}
+
+.habilidades li {
+    list-style-type: none;
+    /* Quita los puntos de la lista */
+    padding: 0;
+    display: inline;
+    /* Muestra los elementos de la lista en línea */
+    margin-right: 10px;
+    /* Espaciado entre los elementos de la lista */
+}
+
+.idiomas {
+    /* background: linear-gradient(to right, #245a2c, #3c5733 50%, #5d805d 50%, #699e69);*/
+
+    padding: 300px;
+    text-align: center;
+    background-position: center;
+    background-image: url(/cursos/AdmDatosDiplo/imgidio.jpg);
+    background-size: cover;
+    margin: auto;
+    /* Centra el contenido horizontalmente */
     width: auto;
     height: auto;
     margin: 10px auto;
     padding: 10px;
     border-radius: 8px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-    
-    
-   
+
 }
-.habilidades li{
-    list-style-type: none; /* Quita los puntos de la lista */
+
+.idiomas li {
+    list-style-type: none;
+    /* Quita los puntos de la lista */
     padding: 0;
-    display: inline; /* Muestra los elementos de la lista en línea */
-    margin-right: 10px; /* Espaciado entre los elementos de la lista */
+    display: inline;
+    /* Muestra los elementos de la lista en línea */
+    margin-right: 10px;
+    /* Espaciado entre los elementos de la lista */
 }
 
-.idiomas {
-    /* background: linear-gradient(to right, #245a2c, #3c5733 50%, #5d805d 50%, #699e69);*/
-     
-     padding: 300px;
-     text-align: center;
-     background-position: center;
-     background-image: url(/cursos/AdmDatosDiplo/imgidio.jpg) ;
-     background-size: cover;
-     margin: auto; /* Centra el contenido horizontalmente */
-     width: auto;
-     height: auto;
-     margin: 10px auto;
-     padding: 10px;
-     border-radius: 8px;
-     box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-
-    }
-
-.idiomas li{
-        list-style-type: none; /* Quita los puntos de la lista */
-        padding: 0;
-        display: inline; /* Muestra los elementos de la lista en línea */
-        margin-right: 10px; /* Espaciado entre los elementos de la lista */
-    }
 .my-button {
     color: #FFF;
     border: 2px solid #6602d8;
@@ -157,10 +272,10 @@ label {
     -webkit-transition: ease-out 0.4s;
     -moz-transition: ease-out 0.4s;
     transition: ease-out 0.4s;
-  }
+}
 
 .boton_para_abajo:hover {
-  box-shadow: inset 0 100px 0 0 #6602d8;
+    box-shadow: inset 0 100px 0 0 #6602d8;
 }
 
 a {
@@ -172,10 +287,10 @@ a {
 a:hover {
     color: #141414;
 }
-canvas{
+
+canvas {
     position: fixed;
     top: 0;
     left: 0;
-    z-index: -1; 
+    z-index: -1;
 }
-
